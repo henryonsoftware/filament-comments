@@ -1,9 +1,9 @@
 <?php
 
-namespace Parallax\FilamentComments\Infolists\Components;
+namespace HenryOnSoftware\FilamentComments\Infolists\Components;
 
 use Filament\Infolists\Components\Entry;
-use Parallax\FilamentComments\Models\FilamentComment;
+use HenryOnSoftware\FilamentComments\Models\FilamentComment;
 
 class CommentsEntry extends Entry
 {

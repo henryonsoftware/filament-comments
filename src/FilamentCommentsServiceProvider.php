@@ -1,6 +1,6 @@
 <?php
 
-namespace Parallax\FilamentComments;
+namespace HenryOnSoftware\FilamentComments;
 
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -11,9 +11,9 @@ use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Parallax\FilamentComments\Livewire\CommentsComponent;
-use Parallax\FilamentComments\Models\FilamentComment;
-use Parallax\FilamentComments\Policies\FilamentCommentPolicy;
+use HenryOnSoftware\FilamentComments\Livewire\CommentsComponent;
+use HenryOnSoftware\FilamentComments\Models\FilamentComment;
+use HenryOnSoftware\FilamentComments\Policies\FilamentCommentPolicy;
 
 class FilamentCommentsServiceProvider extends PackageServiceProvider
 {
@@ -65,7 +65,7 @@ class FilamentCommentsServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'parallax/filament-comments';
+        return 'henryonsoftware/filament-comments';
     }
 
     /**

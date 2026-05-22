@@ -1,6 +1,6 @@
 <?php
 
-namespace Parallax\FilamentComments;
+namespace HenryOnSoftware\FilamentComments;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
