@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/parallax/filament-comments?style=flat-square)](https://packagist.org/packages/parallax/filament-comments)
 ![Stars](https://img.shields.io/github/stars/parallax/filament-comments?style=flat-square)
 
-Add comments to your Filament Resources. - Forced from https://github.com/parallax/filament-comments
+Add comments to your Filament Resources. - Forked from https://github.com/parallax/filament-comments
 
 <img class="filament-hidden" src="https://github.com/parallax/filament-comments/raw/main/assets/filament-comments.jpg"/>
 
