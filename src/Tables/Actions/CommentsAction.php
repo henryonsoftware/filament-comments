@@ -1,12 +1,12 @@
 <?php
 
-namespace Parallax\FilamentComments\Tables\Actions;
+namespace HenryOnSoftware\FilamentComments\Tables\Actions;
 
 use Filament\Actions\Action;
 use Filament\Support\Enums\Width;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
-use Parallax\FilamentComments\Models\FilamentComment;
+use HenryOnSoftware\FilamentComments\Models\FilamentComment;
 
 class CommentsAction extends Action
 {

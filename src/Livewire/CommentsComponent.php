@@ -1,6 +1,6 @@
 <?php
 
-namespace Parallax\FilamentComments\Livewire;
+namespace HenryOnSoftware\FilamentComments\Livewire;
 
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\MarkdownEditor;
@@ -12,7 +12,7 @@ use Filament\Notifications\Notification;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component;
-use Parallax\FilamentComments\Models\FilamentComment;
+use HenryOnSoftware\FilamentComments\Models\FilamentComment;
 
 class CommentsComponent extends Component implements HasForms
 {

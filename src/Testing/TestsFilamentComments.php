@@ -1,6 +1,6 @@
 <?php
 
-namespace Parallax\FilamentComments\Testing;
+namespace HenryOnSoftware\FilamentComments\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 
