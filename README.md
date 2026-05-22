@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/parallax/filament-comments?style=flat-square)](https://packagist.org/packages/parallax/filament-comments)
 ![Stars](https://img.shields.io/github/stars/parallax/filament-comments?style=flat-square)
 
-Add comments to your Filament Resources.
+Add comments to your Filament Resources. - Forced from https://github.com/parallax/filament-comments
 
 <img class="filament-hidden" src="https://github.com/parallax/filament-comments/raw/main/assets/filament-comments.jpg"/>
 
@@ -14,7 +14,7 @@ Add comments to your Filament Resources.
 Install the package via composer:
 
 ```bash
-composer require parallax/filament-comments
+composer require henryonsoftware/filament-comments
 ```
 
 Publish and run the migrations:
@@ -51,7 +51,7 @@ First open the eloquent model you wish to add Filament Comments to.
 ```php
 namespace App\Models;
 
-use Parallax\FilamentComments\Models\Traits\HasFilamentComments;
+use HenryOnSoftware\FilamentComments\Models\Traits\HasFilamentComments;
 
 class Product extends Model
 {
@@ -74,7 +74,7 @@ Add the `CommentsAction` to the `getHeaderActions()` method.
 
 namespace App\Filament\Resources\ProductResource\Pages;
 
-use Parallax\FilamentComments\Actions\CommentsAction;
+use HenryOnSoftware\FilamentComments\Actions\CommentsAction;
 
 class ViewProduct extends ViewRecord
 {
@@ -100,7 +100,7 @@ Add the `CommentsAction` to the `$table->actions()` method.
 
 namespace App\Filament\Resources;
 
-use Parallax\FilamentComments\Tables\Actions\CommentsAction;
+use HenryOnSoftware\FilamentComments\Tables\Actions\CommentsAction;
 
 class ProductResource extends Resource
 {
@@ -127,7 +127,7 @@ Add the `CommentsEntry` to the `$infolist->schema()` method.
 
 namespace App\Filament\Resources;
 
-use Parallax\FilamentComments\Infolists\Components\CommentsEntry;
+use HenryOnSoftware\FilamentComments\Infolists\Components\CommentsEntry;
 
 class ProductResource extends Resource
 {
@@ -147,13 +147,13 @@ Please note that this cannot be used in combination with a comments action on th
 
 By default, all users can view & create comments as well as only delete their own comments.
 
-If you would like to change this behaviour you can create your own eloquent model policy for the `Parallax\FilamentComments\Models\FilamentComment` model.
+If you would like to change this behaviour you can create your own eloquent model policy for the `HenryOnSoftware\FilamentComments\Models\FilamentComment` model.
 
 You should define the policy class in the `filament-comments` config file.
 
 ```php
 return [
-    'model_policy' => \Parallax\FilamentComments\Policies\FilamentCommentPolicy::class,
+    'model_policy' => \HenryOnSoftware\FilamentComments\Policies\FilamentCommentPolicy::class,
 ];
 ```
 
@@ -173,7 +173,7 @@ After configuring the model, you should schedule the `model:prune` Artisan comma
 namespace App\Console;
 
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use Parallax\FilamentComments\Models\FilamentComment;
+use HenryOnSoftware\FilamentComments\Models\FilamentComment;
 
 class Kernel extends ConsoleKernel
 {
